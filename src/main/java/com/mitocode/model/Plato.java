@@ -27,6 +27,15 @@ public class Plato {
 	@Field(name = "estado")
 	private Boolean estado;
 
+	public Plato() { }
+	
+	public Plato(String id, @NotEmpty String nombre, Double precio, @NotNull Boolean estado) {
+		this.id = id;
+		this.nombre = nombre;
+		this.precio = precio;
+		this.estado = estado;
+	}
+
 	public String getId() {
 		return id;
 	}
